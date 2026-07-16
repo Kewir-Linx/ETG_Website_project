@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <div class=" bg-[#0A3D2F] min-h-screen text-white flex flex-col gap-10">
+        <div class="w-full py-7 px-8 text-white flex justify-between items-center">
+
+            <div class="flex items-center gap-4">
+                <div class="border rounded-3xl p-2  bg-green-400 hover:bg-green-500">
+                    <svg id="ham" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 16 16">
+                        <title xmlns="">hamburger</title>
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="border rounded-3xl p-1 ">
+                    EN
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="bold text-4xl items-center">
+                    {/}
+                </div>
+                <div class="justify-start font-medium">
+                    <div class="text-white">Expert</div>
+                    <div class="text-white">Tech Group</div>
+                </div>
+            </div>
+
+            <div class="flex items-center ">
+                <div class="border rounded-3xl p-1">
+                    <img src="../icon_2/logout-02.svg" alt="logout">
+                </div>
+            </div>
+        </div>
+        <div class="text-white flex justify-center items-center">
+            <a href="./index.html" class="cursor-pointer">
+                <img src="../icon_2/arrow-left-02-sharp.svg" alt="back">
+            </a>
+            <div class="px-40 font-medium text-4xl">
+                Category
+            </div>
+        </div>
+        <div id="categoryContainer" class="md:grid grid-cols-3 gap-3 mt-3 mx-7 sm:grid grid-cols-1 gap-1">
+        </div>
+        <div class="text-white text-4xl flex justify-center font-medium">
+            Add Category
+        </div>
+        <div class="mt-3 mb-20 flex gap-2 justify-center">
+            <div class="">
+                <input id="categoryInput" class="py-2 px-20 w-full text-white bg-transparent border rounded-lg border-white"
+                    placeholder="Enter the Category name" type="text">
+            </div>
+            <button
+                id="addBtn"
+                type="button"
+                class="w-20 bg-green-400 hover:bg-green-500 text-white font-semibold py-2 rounded-lg transition-all shadow-[0_0_20px_rgba(0,163,141,0.4)]">Add
+            </button>
+        </div>
+    </div>
+    <script src="../JsFunction/category.js" defer></script>
+</body>
+
+</html>

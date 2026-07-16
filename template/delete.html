@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <div class="bg-[#001a1a] p-2 sm:px-10 lg:px-80 xl:px-10 py-20">
+
+        <div
+            class="relative text-white w-full p-10 rounded-xl border border-red-500/10 bg-red-100 backdrop-blur-xl shadow-2xl">
+            <div class="absolute -top-1 -left-1 w-50 h-10 border-t-4 border-l-4 border-red-600 rounded-tl-3xl"></div>
+            <div class="absolute -top-1 -right-1 w-50 h-10 border-t-4 border-r-4 border-red-600 rounded-tr-3xl"></div>
+            <div class="absolute -bottom-1 -left-1 w-50 h-10 border-b-4 border-l-4 border-red-600 rounded-bl-3xl">
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-50 h-10 border-b-4 border-r-4 border-red-600 rounded-br-3xl">
+            </div>
+            <div class="flex flex-col justify-center">
+                <div class="flex justify-end text-3xl text-white">x</div>
+                <div class="text-3xl font-medium my-6 flex justify-center">
+                    Delete
+                </div>
+                <div
+                    class="border border-red-600 rounded-3xl p-1 bg-red-600 shadow-red-500 flex justify-center md:text-white text-4xl mx-139 ">
+                    !
+                </div>
+                <div class="text-white flex justify-center">Are you sure you want to delete ?</div>
+            </div>
+            <div class="flex justify-center p-4 gap-2">
+                <button class="bg-[#F2A20B] cursor-pointer shadow-xl shadow-black rounded-sm p-2 px-20 hover:bg-amber-300" type="">
+                    Cancel
+                </button>
+                <button class="bg-[#D51119] shadow-xl shadow-black rounded-sm p-2 px-20 flex gap-2 hover:bg-red-500" type="">
+                    <img src="../icon_2/delete-01.svg" alt="delete">
+                    <div>delete</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
